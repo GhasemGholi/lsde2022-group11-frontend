@@ -22,10 +22,11 @@
  -->
 <!DOCTYPE html>
 <html lang="en">
-  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/95368/echarts.min-v340-english.js'></script>
-  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/95368/echarts-wordcloud.min.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/95368/echarts.min-v340-english.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/95368/echarts-wordcloud.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
 <head>
   <!-- META -->
   <meta charset="UTF-8">
@@ -45,6 +46,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
   <link rel="preload" as="style" href="style.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <title>LSDE 2022 website group 11</title>
 </head>
 
@@ -67,30 +69,34 @@
     </section>
     <section class="ui-section-pricing">
       <div class="ui-layout-container">
-        <div class="ui-section-pricing__layout ui-layout-grid ui-layout-grid-3">
+        <div class="ui-section-pricing__layout ui-layout-grid ui-layout-grid-4">
           <div class="ui-component-card ui-component-card--pricing">
-            <canvas id="myChartCross" style="width:100%;max-width:400px"></canvas>
+            <canvas id="myChartCross" style="width:100%;max-width:1000px"></canvas>
           </div>
           <div class="ui-component-card ui-component-card--pricing">
-            <canvas id="myChartIn" style="width:100%;max-width:400px"></canvas>
+            <canvas id="myChartIn" style="width:100%;max-width:1000px"></canvas>
           </div>
           <div class="ui-component-card ui-component-card--pricing">
-            <p style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight:bold;">Directed Graph cross reference between communities</p>
+            <p style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight:bold;">Directed Graph
+              cross reference between communities</p>
             <div id="mainDiv">
               <!-- <h3 style="text-align: center;"><strong>Directed Graph plotting cross reference between communities</strong></h3> -->
             </div>
           </div>
+          <div class="ui-component-card ui-component-card--pricing">
+            <a href="wordcloud.html" class="ui-component-button ui-component-button-big ui-component-button-secondary"
+              role="link" aria-label="#">See Word Cloud</a>
+          </div>
         </div>
       </div>
     </section>
-
     <script src="index.js"></script>
-    <section>
+    <!-- <section>
       <div class="ui-section-pricing__layout ui-layout-grid ui-layout-grid-1">
         <div class="ui-component-card ui-component-card--pricing">
           <a href="wordcloud.html" class="ui-component-button ui-component-button-big ui-component-button-secondary" role="link" aria-label="#">See Word Cloud</a>
         </div>
-    </section>
+    </section> -->
 </body>
 
 </html>
