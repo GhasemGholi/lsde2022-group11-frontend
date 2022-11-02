@@ -1,6 +1,8 @@
 run in file directory > 
 
-```python3 -m http.server```
+```
+python3 -m http.server
+```
 
 then go to the localhost in your browser and type localhost:<number in terminal>
 
