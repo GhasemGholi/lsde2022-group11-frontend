@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
 <title>LSDE 2022 website group 11</title>
@@ -11,23 +11,86 @@
   <h1 style="text-align: center;"><strong>Large Scale Data Engineering 2022</strong></h1>
   <h2 style="text-align: center;"><strong>CR2: Scientific communities</strong></h2>
   <h4 style="text-align: center;"><strong>Hamza Hadda : 2612591 : h.hadda@student.vu.nl <br>Mohammed Lotfi : 2600801 : m.lotfi@student.vu.nl<br>Ghasem Gholi : 2553232 : g.mohammadgholi@student.vu.nl</strong></h3>
-  <div class="box">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <div id="wrapper">
-      <div id="div1">
-        <canvas id="myChartCross" style="width:100%;max-width:400px"></canvas>
-      </div>
-      <div id="div2">
-        <canvas id="myChartIn" style="width:100%;max-width:400px"></canvas>
+
+  <a class="btn btn-success" href="plot.html" target="_blank">Show bar charts of references between communities</a>
+
+  <a class="btn btn-success" href="graph.html" target="_blank">Show reference graph between communities</a>
+
+</body>
+
+</html>
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/95368/echarts.min-v340-english.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/95368/echarts-wordcloud.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+<head>
+  <!-- META -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="unsafe-url">
+  <meta name="robots" content="index, follow">
+  <!-- SPEED -->
+  <link rel="preconnect" href="https://res.cloudinary.com">
+  <link rel="dns-prefetch" href="https://res.cloudinary.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="me" href="#">
+  <link rel="canonical" href="#">
+  <link rel="icon" type="image/png" href="#" sizes="48x48">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="preload" as="style" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <title>LSDE 2022 website group 11</title>
+</head>
+
+<body>
+  <header role="banner" class="ui-section-header">
+    <div class="ui-layout-container">
+      <div class="ui-section-header__layout ui-layout-flex">
+        <a href="#" role="link" aria-label="#" class="ui-section-header--logo">
+          <strong>LSDE 2022</strong>
+        </a>
       </div>
     </div>
-  </div>
+  </header>
+  <main role="main">
+    <section class="ui-section-testimonial">
+      <h4 style="text-align: center;"><strong>Large Scale Data Engineering 2022</strong></h4>
+      <h5 style="text-align: center;"><strong>CR2: Scientific communities</strong></h5>
+      <h6 style="text-align: center;"><strong>Hamza Hadda : 2612591 : h.hadda@student.vu.nl <br>Mohammed Lotfi : 2600801
+          : m.lotfi@student.vu.nl<br>Ghasem Gholi : 2553232 : g.mohammadgholi@student.vu.nl</strong></h6>
+    </section>
+    <section class="ui-section-pricing">
+      <div class="ui-layout-container">
+        <div class="ui-section-pricing__layout ui-layout-grid ui-layout-grid-3">
+          <div class="ui-component-card ui-component-card--pricing">
+            <canvas id="myChartCross" style="width:100%;max-width:400px"></canvas>
+          </div>
+          <div class="ui-component-card ui-component-card--pricing">
+            <canvas id="myChartIn" style="width:100%;max-width:400px"></canvas>
+          </div>
+          <div class="ui-component-card ui-component-card--pricing">
+            <p style="font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight:bold;">Directed Graph cross reference between communities</p>
+            <div id="mainDiv">
+              <!-- <h3 style="text-align: center;"><strong>Directed Graph plotting cross reference between communities</strong></h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="box box--overlay" id="mainDiv">
-    <h3 style="text-align: center;"><strong>Directed Graph plotting cross reference between communities</strong></h1>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="index.js"></script>
-  </div>
+    <section>
+      <div class="ui-section-pricing__layout ui-layout-grid ui-layout-grid-1">
+        <div class="ui-component-card ui-component-card--pricing">
+          <a href="wordcloud.html" class="ui-component-button ui-component-button-big ui-component-button-secondary" role="link" aria-label="#">See Word Cloud</a>
+        </div>
+    </section>
 </body>
 
 </html>
