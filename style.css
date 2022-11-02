@@ -1,0 +1,63 @@
+.node text {
+    fill: black;
+}
+
+.link {
+    stroke-width: 3px;
+}
+
+.link.level0 {
+    stroke: #f00;
+}
+
+.link.level1 {
+    stroke: #fcd43f;
+}
+
+.link.level2 {
+    stroke: #57a7d1;
+}
+
+.node circle {
+    cursor: move;
+    fill: #ccc;
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.node circle {
+    fill: #f00;
+}
+
+.node.level0 circle {
+    fill: #59c169;
+
+}
+
+.box {
+    padding: 100px;
+}
+
+.box--overlay {
+    text-align: right;
+    margin-top: -40px;
+    /*Change this to a value of your choosing*/
+}
+
+#wrapper {
+    border: 1px solid white;
+}
+
+#div1 {
+    display: inline-block;
+    width: 350px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#div2 {
+    display: inline-block;
+    width: 350px;
+    height: 200px;
+    border: 1px solid black;
+}

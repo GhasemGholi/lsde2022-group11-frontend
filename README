@@ -1,0 +1,7 @@
+run in file directory > ```python3 -m http.server``` 
+
+then go to the localhost in your browser and type localhost:<number in terminal>
+
+<number in terminal> is most likely either 8000 or 3000
+
+localhost:8000 or localhost:3000 in your browser
